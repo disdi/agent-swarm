@@ -1,66 +1,77 @@
-<h1 align="center">
-<img src="https://raw.githubusercontent.com/peaceiris/mkdocs-material-boilerplate/main/docs_sample/images/graduate-cap.png" alt="MkDocs icon" width="170">
-<br>MkDocs Material<br>Boilerplate - Starter Kit
-</h1>
 
-![Eyecatch image of MkDocs Material Boilerplate (Starter Kit)](https://raw.githubusercontent.com/peaceiris/mkdocs-material-boilerplate/main/docs_sample/images/material.png)
+# Architecture
+```plantuml
 
+@startuml
+skinparam monochrome false
+skinparam shadowing false
+skinparam dpi 150
+skinparam backgroundColor white
+skinparam titleFontSize 20
+skinparam titleFontStyle bold
 
+title VAS: Verifiable Attestation Swarm Architecture
 
-[![license](https://img.shields.io/github/license/peaceiris/mkdocs-material-boilerplate.svg)](https://github.com/peaceiris/mkdocs-material-boilerplate/blob/main/LICENSE)
-[![release](https://img.shields.io/github/release/peaceiris/mkdocs-material-boilerplate.svg)](https://github.com/peaceiris/mkdocs-material-boilerplate/releases/latest)
-[![GitHub release date](https://img.shields.io/github/release-date/peaceiris/mkdocs-material-boilerplate.svg)](https://github.com/peaceiris/mkdocs-material-boilerplate/releases)
-[![GitHub Actions status](https://github.com/peaceiris/mkdocs-material-boilerplate/workflows/github%20pages/badge.svg)](https://github.com/peaceiris/mkdocs-material-boilerplate/actions)
+' Top: User Input
+[User] as User #ADD8E6
+note right of User
+  Prompt / Goal / Input
+end note
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/9c95ccf4-5c1e-447b-8025-dd0b6f8764a5/deploy-status)](https://app.netlify.com/sites/mkdocs-material/deploys)
+' Swarm Entry Point (no central orchestrator, direct swarm coordination)
+[Swarm Entry Point] as Swarm
 
-<!-- https://shields.io/ -->
+' Agents (yellow/orange like original Agent box)
+[Agent 1] as Agent1 #FFFACD
+[Agent 2] as Agent2 #FFFACD
+[Agent 3] as Agent3 #FFFACD
 
+' Internal components per agent (matching agents-from-scratch style)
+[LLM\n(Reasoning)] as LLM #90EE90
+[Memory\n(State)] as Memory #ADD8E6
+[Tools\n(Execution)] as Tools #FFB6C1
 
+' Bottom: Outputs
+[Outputs] as Output #D3D3D3
+note right of Output
+  Answer / Action / Result
+end note
 
-## Details
+' Flows (user → swarm → agents → components → output)
+User --> Swarm : Prompt / Input
+Swarm --> Agent1 : Task Assignment
+Swarm --> Agent2 : Task Assignment
+Swarm --> Agent3 : Task Assignment
 
-Read more 👉 [Documentation - MkDocs Material Boilerplate]
+' Inter-agent attestation (VAS core innovation)
+Agent1 <--> Agent2 : Attestation Proof\n(State Hash + Signature)
+Agent2 <--> Agent3 : Attestation Proof
+Agent1 <--> Agent3 : Attestation Proof
 
-[Documentation - MkDocs Material Boilerplate]: https://peaceiris.github.io/mkdocs-material-boilerplate/
+' Threat Detection & Self-Healing
+note right of Agent3 : Threat Detected (Injection / Jailbreak / Poisoning)
 
+Agent3 -.-> Isolate : Isolate Compromised Agent
+Isolate -.-> Agent1 : Self-Healing Reroute Tasks
+Isolate -.-> Agent2 : Self-Healing
 
+' Component connections (inside agents)
+Agent1 --> LLM : Reasoning
+Agent1 --> Memory : State / Context
+Agent1 --> Tools : Execution
 
-## Quick start
+' Output flow
+Agent1 --> Output : Swarm Output
+Agent2 --> Output : Swarm Output
 
-```sh
-git clone https://github.com/peaceiris/mkdocs-material-boilerplate.git
-cd mkdocs-material-boilerplate
-pipenv sync --dev
-pipenv shell
-inv serve --config-file mkdocs-sample.yml
+' Styling (clean, professional)
+skinparam componentStyle rectangle
+skinparam ArrowFontSize 12
+skinparam ArrowColor #333
+skinparam NoteBackgroundColor #FFFFCC
+skinparam NoteBorderColor #888
+
+@enduml
+
 ```
 
-
-
-## Links
-
-- [mkdocs/mkdocs: Project documentation with Markdown - GitHub]
-- [squidfunk/mkdocs-material: A Material Design theme for MkDocs]
-
-[mkdocs/mkdocs: Project documentation with Markdown - GitHub]: https://github.com/mkdocs/mkdocs/
-[squidfunk/mkdocs-material: A Material Design theme for MkDocs]: https://github.com/squidfunk/mkdocs-material
-
-
-
-## License
-
-- [MIT License]
-- [The graduate cap icon] made by [Freepik] from [www.flaticon.com] is licensed by [CC 3.0 BY]
-
-[MIT License]: https://github.com/peaceiris/mkdocs-material-boilerplate/blob/main/LICENSE
-[The graduate cap icon]: https://www.flaticon.com/free-icon/graduate-cap_62627
-[Freepik]: https://www.freepik.com/
-[www.flaticon.com]: https://www.flaticon.com/
-[CC 3.0 BY]: http://creativecommons.org/licenses/by/3.0/
-
-
-
-## About Maintainer
-
-- [peaceiris Homepage](https://peaceiris.com/)
