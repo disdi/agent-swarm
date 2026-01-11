@@ -1,16 +1,16 @@
 # Project information
-site_name: "MkDocs Material Boilerplate"
-site_description: "MkDocs Material Boilerplate (Starter Kit) - Deploy documentation to hosting platforms (Netlify, GitHub Pages, GitLab Pages, and AWS Amplify Console) with Docker, pipenv, and GitHub Actions."
-site_author: "peaceiris"
-site_url: "https://mkdocs.peaceiris.com/"
+site_name: "Swarm Documentation"
+site_description: "An application to manage and coordinate a swarm of intelligent agents."
+site_author: "disdi"
+site_url: "https://saketsinha.de/agent-swarm/"
 
 # Copyright
 copyright: "&copy; 2021 peaceiris"
 
 # Repository
 repo_name: "GitHub"
-repo_url: "https://github.com/peaceiris/mkdocs-material-boilerplate"
-edit_uri: "https://github.com/peaceiris/mkdocs-material-boilerplate/edit/main/docs_sample"
+repo_url: "https://github.com/disdi/agent-swarm"
+edit_uri: "https://github.com/disdi/agent-swarm/edit/main/docs_sample"
 
 # Configuration
 docs_dir: "docs_sample"
@@ -60,6 +60,4 @@ extra:
   manifest: "manifest.json"
   social:
     - icon: "fontawesome/brands/github-alt"
-      link: "https://github.com/peaceiris"
-    - icon: "fontawesome/brands/twitter"
-      link: "https://twitter.com/piris314en"
+      link: "https://github.com/disdi"
