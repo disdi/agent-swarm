@@ -1,7 +1,7 @@
 {
-    "short_name": "MkDocs",
-    "name": "MkDocs Material Boilerplate",
-    "description": "MkDocs Material Boilerplate (Starter Kit) - Deploy documentation to hosting platforms (Netlify, GitHub Pages, GitLab Pages, and AWS Amplify Console) with Docker, pipenv, and GitHub Actions.",
+    "short_name": "Swarm",
+    "name": "Agent Swarm",
+    "description": "An application to manage and coordinate a swarm of intelligent agents.",
     "lang": "en-US",
     "icons": [
         {
