@@ -1,7 +1,7 @@
 # PLAN
 
 ## Goal
-Build a minimal, demonstrable prototype of a multi-agent swarm that incorporates distributed attestation for real-time threat detection/mitigation (prompt injections, jailbreaks, poisoning), aligning with SPRIND Funke requirements for a scalable "agent coordination framework" with embedded security innovation.
+Build a minimal, demonstrable prototype of a multi-agent swarm that incorporates distributed attestation for real-time threat detection/mitigation (prompt injections, jailbreaks, poisoning), for a scalable "agent coordination framework" with embedded security innovation.
 
 ### PoC Objectives
 
@@ -89,4 +89,4 @@ OpenAI Assistant Swarm (Python, uses OpenAI Assistants API for agents/tools/hand
 #### Long-Term: 
 - Frontier-scale swarm (100B+ parameters).
 
-This PoC builds directly on Swarm's strengths (simple agent orchestration) while adding VAS's novel security layer. It's feasible in 6 weeks with 2-3 developers, low-cost (local compute), and highly demonstrable for SPRIND. Let me know if you want code snippets or a GitHub repo structure!
+This PoC builds directly on Swarm's strengths (simple agent orchestration) while adding VAS's novel security layer.
