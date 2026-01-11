@@ -24,44 +24,4 @@
          <loc>https://mkdocs.peaceiris.com/extensions/mathjax/</loc>
          <lastmod>2026-01-11</lastmod>
     </url>
-    <url>
-         <loc>https://mkdocs.peaceiris.com/getting-started/docker/</loc>
-         <lastmod>2026-01-11</lastmod>
-    </url>
-    <url>
-         <loc>https://mkdocs.peaceiris.com/getting-started/download-boilerplate/</loc>
-         <lastmod>2026-01-11</lastmod>
-    </url>
-    <url>
-         <loc>https://mkdocs.peaceiris.com/getting-started/invoke/</loc>
-         <lastmod>2026-01-11</lastmod>
-    </url>
-    <url>
-         <loc>https://mkdocs.peaceiris.com/getting-started/pip/</loc>
-         <lastmod>2026-01-11</lastmod>
-    </url>
-    <url>
-         <loc>https://mkdocs.peaceiris.com/getting-started/pipenv/</loc>
-         <lastmod>2026-01-11</lastmod>
-    </url>
-    <url>
-         <loc>https://mkdocs.peaceiris.com/hosting-and-deployment/aws-amplify-console/</loc>
-         <lastmod>2026-01-11</lastmod>
-    </url>
-    <url>
-         <loc>https://mkdocs.peaceiris.com/hosting-and-deployment/combinations/</loc>
-         <lastmod>2026-01-11</lastmod>
-    </url>
-    <url>
-         <loc>https://mkdocs.peaceiris.com/hosting-and-deployment/github-pages/</loc>
-         <lastmod>2026-01-11</lastmod>
-    </url>
-    <url>
-         <loc>https://mkdocs.peaceiris.com/hosting-and-deployment/gitlab-pages/</loc>
-         <lastmod>2026-01-11</lastmod>
-    </url>
-    <url>
-         <loc>https://mkdocs.peaceiris.com/hosting-and-deployment/netlify/</loc>
-         <lastmod>2026-01-11</lastmod>
-    </url>
 </urlset>
