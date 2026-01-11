@@ -1,5 +1,5 @@
 
 # Architecture
 
-![Image](https://raw.githubusercontent.com/disdi/agent-swarm/docs_sample/images/swarm.png)
+<img src="docs_sample/images/swarm.png" alt="MkDocs icon" width="2070">
 
