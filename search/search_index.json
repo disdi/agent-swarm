@@ -1,1 +1,1 @@
-{"config":{"lang":["en"],"separator":"[\\s\\-\\.]+","pipeline":["stopWordFilter"]},"docs":[{"location":"","title":"Architecture  Swarm Architecture","text":""},{"location":"license/","title":"License","text":"<ul> <li>MIT License</li> </ul>"}]}
+{"config":{"lang":["en"],"separator":"[\\s\\-\\.]+","pipeline":["stopWordFilter"]},"docs":[{"location":"","title":"Architecture &gt; Swarm Architecture","text":""},{"location":"license/","title":"License","text":"<ul> <li>MIT License</li> </ul>"}]}
